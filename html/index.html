@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/google-fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/631fd4a599.js" crossorigin="anonymous"></script>
+    <title>Products</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo-div">
+            <img  id="header-logo" src="/img/logo6.svg" alt="digeridoo-logo">
+        </div>
+        <nav id="nav-bar">
+            <p>Dee digeridoos</p>
+            <ul id="nav-list">
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">How it's made</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li>
+                    <span class="material-symbols-outlined" style="color:white; font-size: 35px;">
+                        shopping_cart
+                    </span>
+                    <div id="basket-badge">
+                        <span style="color: white;">0</span>     
+                    </div>
+                </li>
+                <li>
+                    <input onclick="slideDropdownMenu()" type="checkbox" id="hamburger-menu-icon">
+                    <label for="hamburger-menu-icon" class="menu-lines">
+                        <span class="line first"></span>
+                        <span class="line second"></span>
+                        <span class="line third"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+        <nav id="dropdown-navbar">
+            <ul id="dropdown-nav-list">
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">How it's made</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="side-wrapper-left">
+            
+        </div>
+        <div id="sections">
+            <section id="features">
+                <p>
+                <h3>Features</h3>
+                <div class="features-item">
+                    <span class="material-symbols-outlined" style="font-size:45px;">nature</span>
+                    <h4>Handcrafted, home-made wooden digeridoos</h4>
+                    <p>Our digeridoos are 100% made of high quality eucalyptus wood sourced from Australia's Mountain Ash
+                        region. We do not deal with PVC.</p>
+                </div>
+                <div class="features-item">
+                    <span class="material-symbols-outlined" style="font-size:45px;">local_shipping</span>
+                    <h4>Fast Shipping</h4>
+                    <p>You can choose from 3 ways of delivery options. We oparate with industry leader shipping companies.
+                        For our Premium plus customers and for orders above 150EUR we charge no shipping fees. </p>
+                </div>
+                <div class="features-item">
+                    <span class="material-symbols-outlined" style="font-size: 45px; ">policy</span>
+                    <h4>Quality Assurance</h4>
+                    <p>Our instruments are quality inspected by the Digeridoo Foundation, the leading organization in the
+                        industry.
+                    </p>
+                </div>
+                </p>
+            </section>
+            <section id="how-it-works">
+                <h3>How it's made</h3>
+                <div id="video-div">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NV5Bgt05AoM?controls=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            <section id="pricing">
+                <h3>Pricing</h3>
+                <div id="price-container">
+                    <div id="small" class="price-box">
+                        <div class="price-item">
+                            <h4>Small</h4>
+                        </div>
+                        <p class="price">100 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porta lorem. Sed nulla tortor, varius ut dapibus ut</p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="large" class="price-box">
+                        <div class="price-item">
+                            <h4>Large</h4>
+                        </div>
+                        <p class="price">170 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porta lorem. Sed nulla tortor, varius ut dapibus ut</p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="extra-large" class="price-box">
+                        <div class="price-item">
+                            <h4>Extra large</h4>
+                        </div>
+                        <p class="price">250 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porvta lorem. Sed nulla tortor, varius ut dapibus ut
+                        </p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="extra-large" class="price-box">
+                        <div class="price-item">
+                            <h4>Extra large</h4>
+                        </div>
+                        <p class="price">250 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porvta lorem. Sed nulla tortor, varius ut dapibus ut
+                        </p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="small" class="price-box">
+                        <div class="price-item">
+                            <h4>Small</h4>
+                        </div>
+                        <p class="price">100 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porta lorem. Sed nulla tortor, varius ut dapibus ut</p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="large" class="price-box">
+                        <div class="price-item">
+                            <h4>Large</h4>
+                        </div>
+                        <p class="price">170 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porta lorem. Sed nulla tortor, varius ut dapibus ut</p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="extra-large" class="price-box">
+                        <div class="price-item">
+                            <h4>Extra large</h4>
+                        </div>
+                        <p class="price">250 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porvta lorem. Sed nulla tortor, varius ut dapibus ut
+                        </p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="extra-large" class="price-box">
+                        <div class="price-item">
+                            <h4>Extra large</h4>
+                        </div>
+                        <p class="price">250 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porvta lorem. Sed nulla tortor, varius ut dapibus ut
+                        </p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="small" class="price-box">
+                        <div class="price-item">
+                            <h4>Small</h4>
+                        </div>
+                        <p class="price">100 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porta lorem. Sed nulla tortor, varius ut dapibus ut</p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="large" class="price-box">
+                        <div class="price-item">
+                            <h4>Large</h4>
+                        </div>
+                        <p class="price">170 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porta lorem. Sed nulla tortor, varius ut dapibus ut</p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="extra-large" class="price-box">
+                        <div class="price-item">
+                            <h4>Extra large</h4>
+                        </div>
+                        <p class="price">250 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porvta lorem. Sed nulla tortor, varius ut dapibus ut
+                        </p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="extra-large" class="price-box">
+                        <div class="price-item">
+                            <h4>Extra large</h4>
+                        </div>
+                        <p class="price">250 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porvta lorem. Sed nulla tortor, varius ut dapibus ut
+                        </p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="small" class="price-box">
+                        <div class="price-item">
+                            <h4>Small</h4>
+                        </div>
+                        <p class="price">100 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porta lorem. Sed nulla tortor, varius ut dapibus ut</p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="large" class="price-box">
+                        <div class="price-item">
+                            <h4>Large</h4>
+                        </div>
+                        <p class="price">170 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porta lorem. Sed nulla tortor, varius ut dapibus ut</p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="extra-large" class="price-box">
+                        <div class="price-item">
+                            <h4>Extra large</h4>
+                        </div>
+                        <p class="price">250 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porvta lorem. Sed nulla tortor, varius ut dapibus ut
+                        </p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                    <div id="extra-large" class="price-box">
+                        <div class="price-item">
+                            <h4>Extra large</h4>
+                        </div>
+                        <p class="price">250 AUD</p>
+                        <p>Donec a mi egestas, aliquam est sit amet, porvta lorem. Sed nulla tortor, varius ut dapibus ut
+                        </p>
+                        <input type="button" name="Buy" class="buy-button" value="Add to basket">
+                    </div>
+                </div>
+                <button class="expand-button">
+                    Show more
+                    <span class="material-symbols-outlined">
+                        expand_circle_down
+                    </span>                            
+                </button>
+                <p>Haven't you found what you are looking for? We do accept custom orders, you can quickly submit yours by
+                    filling out the below form and we will get back to you within 24hrs.</p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <textarea id="custom-orders" name="customorders" id="" cols="30" rows="10"
+                        required="required"></textarea>
+                    <div id="accept-terms">
+                        <input type="checkbox" id="accept-terms-checkbox" required />
+                        <label for="accept-terms-checkbox">I have read and understood the <a
+                                href="https://www.freecodecamp.org/news">Terms and conditions</a></label>
+                    </div>
+                    <div id="accept-privacy-terms">
+                        <input type="checkbox" id="privacy-terms-chechbox" required />
+                        <label for="privacy-terms-checkbox">I agree to the <a
+                                href="https://www.freecodecamp.org/news">Privacy terms</a></label>
+                    </div>
+                    <div id="submit-mail">
+                        <input id="e-mail" type="email" placeholder="Your e-mail address" required="required" />
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div id="side-wrapper-right">
+        </div>
+    </main>
+    <footer>
+        <div id="footer-grid">
+            <div id="footer-tribute">
+                <h4><b>Tribute</b></h4>
+                <p>We are greatful to all our customers for their conscious choices. By submitting your order you
+                    contribute to
+                    a greener world and a much more sustainable supply chain accross the Globe. We take great care when
+                    choosing
+                    our suppliers both during producing and shipping. Plus we transfer every 1AU$ per order to the
+                    Digeridoo
+                    Foundation to contribute to the constant reforestaion of Mountain Ash's Eucalyptus forests. </p>
+                <img src="/img/rainforest-alliance-certified-seal-lg.png" alt="rainforest-alliance-logo" width="100">
+            </div>
+            <div id="footer-links">
+                <h4>Links</h4>
+                <ul id="footer-linklist">
+                    <li id="footer-privacy">Privacy</li>
+                    <hr>    
+                    <li id="footer-terms-and-condition">Terms and conditions</li>
+                    <hr>
+                    <li id="footer-contacts">Contacts</li>
+                    <hr>
+                    <li id="footer-support">Support</li>
+                    <hr>
+                    <li id="footer-blog">Blog</li>
+                </ul>
+
+            </div>
+            <div id="footer-works">
+                <h4>Some of our works</h4>
+                <div id="digi-imgs">
+                    <img class="footer-img" src="/img/17b981cfddbda32332522844e4852a0b--didgeridoo-teak.jpg" alt="dig1">
+                    <img class="footer-img" src="/img/A12P2GwJqbL._AC_SL1500_.jpg" alt="dig2">
+                    <img class="footer-img" src="/img/1a7a1af09f4819353edd7a5bc3ac941a--didgeridoo-garden-gifts.jpg"
+                        alt="digi3">
+                    <img class="footer-img" src="/img/A12P2GwJqbL._AC_SL1500_.jpg" alt="digi4">
+                    <img class="footer-img" src="/img/coleccion-de-didgeridoos-e7hjtc.jpg" alt="digi5">
+                    <img class="footer-img" src="/img/didgeridoos-23434373.jpg" alt="digi6">
+                    <img class="footer-img" src="/img/mis didgeridoo 2009 kaypacha.jpg" alt="dig7">
+                    <img class="footer-img" src="/img/18081397-didgeridoo-aborigen-bambú.jpg" alt="dig8">
+                    <img class="footer-img" src="/img/didgeridoos-AS296E.jpg" alt="digi9">
+                    <img class="footer-img"
+                        src="/img/una-coleccion-de-didgeridoos-aborigen-como-recuerdos-turisticos-sydney-australia-awyd2f.jpg"
+                        alt="digi10">
+                    <img class="footer-img" src="/img/images-4.jpeg" alt="digi11">
+                    <img class="footer-img" src="/img/images-5.jpeg" alt="digi12">
+                </div>
+            </div>
+            <div id="footer-social-media">
+                <h4>Follow us</h4>
+                <p>Dig deeper into our community! Join and be part of our group of
+                    digeridoo enthusiasts. You can trust us, there is a lot going on: Workshops, summer camps, online
+                    conferences plus a ton of training material and other practical details about our beloved
+                    passion. </p>
+                <div id="social-media-icons">
+                    <i class="fa-brands fa-square-youtube fa-2xl"></i>
+                    <i class="fa-brands fa-square-twitter fa-2xl"></i>
+                    <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-square-pinterest fa-2xl"></i>
+                    <i class="fa-brands fa-square-instagram fa-2xl"></i>
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </div>
+            </div>
+        </div>
+        <div id="copyright-wrapper">
+            <span id="copyright-text">Copyright 2016, Dee Digeridoo</span>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
