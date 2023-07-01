@@ -419,6 +419,7 @@ span {
     margin-bottom: 20px;
     cursor: pointer;
     border-radius: 0px;
+    color: #000;
 }                   
 
 .price-box > input:active,
