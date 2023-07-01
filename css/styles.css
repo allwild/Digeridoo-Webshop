@@ -125,7 +125,9 @@ section {
     scroll-margin-top: 79px
 }
 
-
+input {
+    border-radius: 0 !important;
+}
 
 textarea:focus, 
 input:focus{
@@ -531,7 +533,7 @@ span {
     border: var(--body-border);
     font-size: var(--button-font-size);
     text-align: center;
-    border-radius: 0px;
+    
 
 }
 
