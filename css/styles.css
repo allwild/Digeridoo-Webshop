@@ -44,6 +44,17 @@
         font-size: 20px !important;
     }
 
+    #nav-bar > h2 {
+        color: white;
+        line-height: inherit;
+        white-space: nowrap ;
+        font-size: 35px !important;
+    }
+
+    #nav-list li {
+        align-self: flex-end;
+    }
+
     #nav-list li:not(:last-child) {
         display: none !important;
     }
@@ -65,17 +76,16 @@
         opacity: 0.95;
     }
 
-    #logo-div{
-        animation-name: slidelogoup !important;
-        animation-fill-mode: forwards;
-        animation-duration: 0.5s;
+    #features {
+        margin-top: 60px;
     }
-}
 
-@media screen and (max-width: 400px) {
-    #nav-bar > p {
-        font-size: 200%;
+    #price-container > * {
+        width: 100%;
+
     }
+
+
 }
 
 
@@ -112,7 +122,7 @@ header {
     height: 79px;
     position: sticky;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
     top:0;
     margin: 0;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
@@ -124,9 +134,6 @@ header {
     width: 100px; 
     height: 150px;
     top:-30px;
-    animation-name: slidelogodown;
-    animation-fill-mode: forwards;
-    animation-duration: 0.5s;
 }
 
 #header-logo {
@@ -139,24 +146,25 @@ header {
 
 #nav-bar {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 79px;
     background-color: var(--header-black);
     display: flex;
-    flex-direction:row;
+    
     
 }
 
-#nav-bar > p {
+#nav-bar > h2 {
     font-size: 300%;
     font-family: 'Qwitcher Grypen', cursive;
     color: white;
-    margin: auto 0 5px 140px;
+    margin: auto 0 5px 120px;
 }
 
 #nav-list {
+    display: flex;
     list-style: none;
-    margin: auto 30px 0px auto;
+    margin: auto 20px 0px auto;
     padding: 0 0 10px 0;
     font-family: 'Caveat', cursive;
     font-size: 23px;
@@ -231,25 +239,6 @@ header {
         }
     }
 
-    @keyframes slidelogoup {
-        0% {
-            transform: translateY(0px);
-        }
-
-        100% {
-            transform: translateY(-28px);
-        }
-    }
-
-    @keyframes slidelogodown {
-        0% {
-            transform: translateY(-28px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
 
     .slidenavdown {
         animation-name: slidenavdown;
@@ -398,7 +387,7 @@ span {
     background-color: var(--item-grey);
     box-shadow: var(--item-box-shadow);
     text-align: center;
-    max-width: 267px;
+    width: 267px;
     position: relative;
     transition: transform 300ms;
     
@@ -423,6 +412,7 @@ span {
     opacity: 0.8;
     margin-bottom: 20px;
     cursor: pointer;
+    border-radius: 0px;
 }                   
 
 .price-box > input:active,
@@ -435,7 +425,7 @@ span {
     background-color:var(--lightblue);
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: #000 solid 0.5px;
+    
 }
 
 .price-item > h4 {
@@ -573,7 +563,7 @@ footer img {
 #social-media-icons {
     margin: 50px 0px 20px 0px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     gap: 10px;
 }
 
