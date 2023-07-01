@@ -91,8 +91,13 @@
 
 /* General settings */
 
-body {
+body, html {
     margin: 0;
+}
+
+
+body {
+    overflow-x: hidden;
     background-color: rgb(244, 241, 241);
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -101,6 +106,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    
 }
 
 section {
